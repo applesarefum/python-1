@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+
+import random as r
+import colors as c
+
+sides=[None]
+
+sides.append(''' -------
+|       |
+|   •   |
+|       |
+ -------''')
+
+sides.append(''' -------
+| •     |
+|       |
+|     • |
+ -------''')
+
+sides.append(''' -------
+| •     |
+|   •   |
+|     • |
+ -------''')
+
+sides.append(''' -------
+| •   • |
+|       |
+| •   • |
+ -------''')
+
+sides.append(''' -------
+| •   • |
+|   •   |
+| •   • |
+ -------''')
+
+sides.append(''' -------
+| •   • |
+| •   • |
+| •   • |
+ -------''')
+
+dice=1
+last_dice=1
+print(c.red+c.clear)
+
+print('To quit, press Ctrl+C at any time.')
+try:
+    while True:
+        dice=input('How many dice would you like to roll? ')
+        if not dice:
+            dice=last_dice
+        else:
+            last_dice=dice
+        try:
+            for c in range(int(dice)):
+                print(sides[r.randint(1,6)])
+        except ValueError:
+            print('Invalid Number!')
+except KeyboardInterrupt:
+    print(' ya later!')

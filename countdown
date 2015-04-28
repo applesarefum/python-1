@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+import time as t
+import colors as c
+import sys
+print(c.orange+"Press Ctrl+C at any time to quit")
+
+try:
+    if len(sys.argv)==1:
+        start=int(input("What would you like to count down from? "))
+    else:
+        start=int(sys.argv[1])
+
+except ValueError:
+    print("Oops, can't count down from that!")
+    quit()#this is temporary, if removed, the program will not function properly
+
+try:
+    for count in range(start,0,-1):
+        print(str(count)+' seconds')
+        t.sleep(1)
+    print("That's all, folks!")
+except KeyboardInterrupt:
+    print(" ya later!")
