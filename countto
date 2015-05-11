@@ -10,16 +10,14 @@ try:
         to=input("What would you like to count to? ")
     else:
         to=int(sys.argv[1])
-escept ValueError:
-    print("Oops, invalid number!")
-    quit()#Temporary, as program is non-functional w/o it
-print(c.clear)
-print('Counting to '+str(to))
-
-try:
+    print(c.clear)
+    print('Counting to '+str(to))
     for count in range(int(to)):
         print(str(count)+" seconds")
         time.sleep(1)
     print(str(to)+' seconds, Done!')
+except ValueError:
+    print("Oops, invalid number!")
+
 except KeyboardInterrupt:
     print("losing the program already?")
