@@ -1,2 +1,3 @@
-# python-1
-SkilStak Python-1 class
+# python-0
+SkilStak Python-0 class
+qweqweqwe

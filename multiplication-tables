@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+import colors as c
+import sys
+
+print(c.clear+c.red+'Multiplication tables')
+
+if len(sys.argv) < 2:
+    num=input('Please enter a number: ')
+else:
+    num=sys.argv[1]
+num=int(num)
+for count in range(13):
+    print(str(num)+'*'+str(count)+'='+str(num*count))

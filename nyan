@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+import colors as c
+import time as t
+
+def pure_evil():
+    try:
+        while True:
+            print(c.random_color()+'NYAN', end=' ')
+
+    except KeyboardInterrupt:
+        print(c.clear+'You DARE try to stop me?',end='')
+        for count in range(3):
+            t.sleep(.25)
+            print('.',end='')
+        t.sleep(1)
+        pure_evil()
+pure_evil()

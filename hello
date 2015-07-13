@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+import colors as c
+print(c.clear)
+print(c.base02+'H'+c.base01+'A'+c.base00+'H'+c.base0+'A'+c.base1+'H'+c.base2+'A'+c.base3+'H'+c.reset)
+print(c.yellow+'H'+c.orange+'e'+c.red+'l'+c.magenta+'l'+c.violet+'o'+c.blue+'W'+c.cyan+'o'+c.green+'r'+c.yellow+'l'+c.red+'d'+c.reset)
+print('A sound'+c.blue+' soul '+c.reset+'dwells within a sound mind and a sound body'+c.reset)
+print(c.base02+'qwe'+c.reset+'qwe'+c.base02+'qwe'+c.reset)
