@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+import utils
+text='''
+Once upon a time there was a {person1}. {person1} was {verb ending in ing1} in
+{place} when a {person2} came along. {person2} was jealous of the {verb ending in ing1}
+skillz that {person1} possesed, so they went to the house of {famous person} so they 
+could learn how. but {famous person} didn't know who {person2} was and so they screamed
+and called the cops. {person2} was then reprehended and stayed in jail for 47.299 years
+and took up {verb ending in ing2} instead.
+THE END!
+'''
+words={
+    "place":None,
+    "person1":None,
+    "person2":None,
+    "famous person":None,
+    "verb ending in ing1":None,
+    "verb ending in ing2":None
+}
+for keyword in words:
+    words[keyword]=utils.ask(keyword.title().rstrip('0123456789')+':')
+    print(text.format(**words))

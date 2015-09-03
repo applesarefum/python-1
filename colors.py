@@ -22,21 +22,37 @@ base3   ="\033[1;37m"
 reset   ="\033[0m"
 clear   ="\033[H\033[2J"
 
+y    ="\033[0;33m"
+o    ="\033[1;31m"
+r    ="\033[0;31m"
+m    ="\033[0;35m"
+v    ="\033[1;35m"
+b    ="\033[0;34m"
+c    ="\033[0;36m"
+g    ="\033[0;32m"
+b03  ="\033[1;30m"
+b02  ="\033[0;30m"
+b01  ="\033[1;32m"
+b00  ="\033[1;33m"
+b0   ="\033[1;34m"
+b1   ="\033[1;36m"
+b2   ="\033[0;37m"
+b3   ="\033[1;37m"
+re   ="\033[0m"
+cl   ="\033[H\033[2J"
+
 import random
-colors=[yellow,orange,red,magenta,violet,blue,cyan,green]
-bases=[base02,base01,base00,base0,base1,base2,base3]
-def random_color():
+colors=[y,o,r,m,v,b,c,g]
+bases=[b02,b01,b00,b0,b1,b2,b3]
+def rc():
     return random.choice(colors)
-def random_base():
-    return random.choice(base)
 
 if __name__=="__main__":
-    print(yellow+'Yellow '+orange+'Orange '+red+'Red '+magenta+'Magenta '+violet+'Violet '+blue+'Blue '+cyan+'Cyan '+green+'Green')
-    input(base03+'base03 '+base02+'base02 '+base01+'base01 '+base00+'base00 '+base0+'base0 '+base1+'base1 '+base2+'base2 '+base3+'base3')
-    print(clear)
-    for count in range(111):
-        color1=random_color()
-        color2=random_color()
-        color3=random_color()
+    print(y+'Yellow '+o+'Orange '+r+'Red '+m+'Magenta '+v+'Violet '+b+'Blue '+c+'Cyan '+g+'Green')
+    print(b03+'base03 '+b02+'base02 '+b01+'base01 '+b00+'base00 '+b0+'base0 '+b1+'base1 '+b2+'base2 '+b3+'base3')
+    for count in range(5):
+        color1=rc()
+        color2=rc()
+        color3=rc()
         print(color1+'lel '+color2+'sweg '+color3+'XD',end=' ')
-    print(reset)
+    print(r)
