@@ -1,1 +1,7 @@
 #!/usr/bin/env python3
+import random
+answers=['ye','nu']
+print('Ask yer question')
+input('>')
+print(random.choice(answers))
+

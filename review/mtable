@@ -1,1 +1,4 @@
 #!/usr/bin/env python3
+num=input("what number do you want to multiply?")
+for count in range(12):
+  print(num+'*'+str(count)+'='+int(num)*count)

@@ -1,1 +1,11 @@
 #!/usr/bin/env python3
+qwer=['waffles','pancakes','french toast']
+for item in qwer:
+  print("do you like "+item+'?')
+  ans=input('>')
+  if 'yes' in ans:
+    pass
+  else:
+    print('aww man')
+    exit(1)
+print("do do do do can't wait to get a mouthful!")
